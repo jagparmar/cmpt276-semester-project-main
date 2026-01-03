@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ProgressBar for loading -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <!-- Gallery Name TextView -->
+    <TextView
+        android:id="@+id/galleryNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Gallery Description TextView -->
+    <TextView
+        android:id="@+id/galleryDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery Description"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Gallery UID TextView -->
+    <TextView
+        android:id="@+id/galleryUIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery UID"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- RecyclerView for displaying members -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/membersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- GridView for gallery images -->
+    <GridView
+        android:id="@+id/galleryGridView"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:gravity="center"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp" />
+
+    <!-- Upload Button -->
+    <Button
+        android:id="@+id/uploadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:drawableLeft="@drawable/addphoto"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Buttons at the bottom -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center">
+
+            <!-- Edit Gallery Button -->
+            <Button
+                android:id="@+id/editGalleryButton"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Edit Gallery" />
+
+            <!-- Leave Gallery Button -->
+            <Button
+                android:id="@+id/leaveGalleryButton"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Leave Gallery" />
+
+            <!-- Delete Gallery Button -->
+            <Button
+                android:id="@+id/deleteGalleryButton"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:text="Delete Gallery" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

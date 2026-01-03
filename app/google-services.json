@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "256768018316",
+    "project_id": "nostalgia-nest",
+    "storage_bucket": "nostalgia-nest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256768018316:android:db68fe9cb6e9d311ab78a9",
+        "android_client_info": {
+          "package_name": "com.example.nostalgianest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ5c8fL8bbZo2yD5iq1GRnk90vcqazbSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

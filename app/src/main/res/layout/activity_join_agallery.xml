@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNumberSigned2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Gallery UID" />
+
+    <EditText
+        android:id="@+id/passcodeInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter Passcode"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/joinGalleryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Gallery"
+        android:onClick="joinButtonClicked" />
+</LinearLayout>
